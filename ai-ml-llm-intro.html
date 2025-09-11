@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with AI, ML, and LLMs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #118AB2;
+            line-height: 1;
+        }
+        .flow-box {
+            border: 2px solid #118AB2;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#073B4C] mb-2">Getting Started with AI, ML, & LLMs</h1>
+            <p class="text-lg text-[#118AB2] font-semibold">An Infographic for CSE Students</p>
+        </header>
+
+        <main>
+            <section id="core-concepts" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#073B4C]">The Core Concepts</h2>
+                    <p class="text-md text-gray-600 mt-1">Understanding the building blocks of modern intelligent systems.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                        <div class="text-5xl mb-4">🧠</div>
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-2">What is AI?</h3>
+                        <p class="text-gray-600">Artificial Intelligence is about creating machines that think and act smartly. You use it daily in apps like:</p>
+                        <div class="flex justify-around mt-4 text-4xl">
+                            <span title="Google Maps">🚗</span>
+                            <span title="YouTube">🎥</span>
+                            <span title="ChatGPT">💬</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:col-span-2">
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-2 text-center">Machine Learning Basics</h3>
+                        <p class="text-gray-600 text-center mb-6">ML teaches computers with examples, not explicit rules. It's a fundamental process for creating predictive models, like estimating house prices from historical data.</p>
+                        <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                            <div class="flow-box bg-[#E0F7FA] rounded-lg p-4 text-center w-40">
+                                <span class="text-3xl">📊</span>
+                                <p class="font-semibold">Input Data</p>
+                            </div>
+                            <div class="flow-arrow font-bold transform md:-rotate-0 rotate-90">→</div>
+                            <div class="flow-box bg-[#E0F7FA] rounded-lg p-4 text-center w-40">
+                                <span class="text-3xl">⚙️</span>
+                                <p class="font-semibold">Train Model</p>
+                            </div>
+                            <div class="flow-arrow font-bold transform md:-rotate-0 rotate-90">→</div>
+                            <div class="flow-box bg-[#E0F7FA] rounded-lg p-4 text-center w-40">
+                                <span class="text-3xl">🔮</span>
+                                <p class="font-semibold">Make Prediction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 mt-8">
+                    <h3 class="text-2xl font-bold text-center text-[#073B4C]">Generative AI Creates New Content</h3>
+                    <p class="text-gray-600 text-center mb-4">Unlike traditional AI that analyzes data, GenAI produces entirely new content. The chart below shows the variety of outputs GenAI can produce.</p>
+                    <div class="chart-container">
+                        <canvas id="genAiChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="llms" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#073B4C]">The Power of Language: LLMs</h2>
+                    <p class="text-md text-gray-600 mt-1">Exploring the models that understand and generate human-like text.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-3">What are Large Language Models?</h3>
+                        <p class="text-gray-600 mb-4">LLMs are a type of GenAI trained on vast amounts of text data from the internet. Their ability to process language allows them to:</p>
+                        <ul class="list-disc list-inside space-y-2 text-[#118AB2]">
+                            <li><span class="text-gray-700">Answer complex questions</span></li>
+                            <li><span class="text-gray-700">Summarize long documents</span></li>
+                            <li><span class="text-gray-700">Translate between languages</span></li>
+                            <li><span class="text-gray-700">Write source code</span></li>
+                        </ul>
+                    </div>
+                     <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-center text-[#073B4C]">Prominent LLM Examples</h3>
+                        <p class="text-gray-600 text-center mb-4">This chart shows a conceptual representation of the mindshare or prominence of major LLMs in the current landscape.</p>
+                        <div class="chart-container h-72 md:h-80">
+                            <canvas id="llmChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="future" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#073B4C]">The Future is Autonomous</h2>
+                    <p class="text-md text-gray-600 mt-1">Looking at advanced concepts that give AI more agency and better knowledge.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-3">Agentic AI: Your Personal Assistant</h3>
+                        <p class="text-gray-600 mb-4">Agentic AI takes instructions and formulates a multi-step plan to achieve a goal. It acts as an autonomous agent.</p>
+                        <div class="bg-[#FFF9C4] border-l-4 border-[#FFD166] p-4 rounded-r-lg">
+                            <p class="font-semibold">Example Task:</p>
+                            <p class="text-gray-700">"Plan and book a weekend trip." The AI would find flights, compare hotels, and complete the bookings on your behalf.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-3">RAG: Smarter with External Data</h3>
+                        <p class="text-gray-600 mb-2">Problem: LLMs can be outdated. Solution: Retrieval-Augmented Generation (RAG) connects them to live knowledge bases.</p>
+                        <div class="flex items-center justify-center space-x-2 sm:space-x-4 p-4 bg-gray-50 rounded-lg mt-4">
+                            <div class="text-center">
+                                <div class="text-4xl">🤖</div>
+                                <p class="font-semibold text-sm">LLM</p>
+                            </div>
+                            <div class="text-4xl font-bold text-[#06D6A0]">+</div>
+                            <div class="text-center">
+                                <div class="text-4xl">📚</div>
+                                <p class="font-semibold text-sm">Your Data</p>
+                            </div>
+                            <div class="text-4xl font-bold text-[#06D6A0]">=</div>
+                            <div class="text-center">
+                                <div class="text-4xl">💡</div>
+                                <p class="font-semibold text-sm">Better Answers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="careers" class="mb-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#073B4C]">Your Future in AI</h2>
+                    <p class="text-md text-gray-600 mt-1">Why these skills matter for your career and how you can get started.</p>
+                </div>
+                
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                     <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-center text-[#073B4C]">AI's Impact Across Industries</h3>
+                        <p class="text-gray-600 text-center mb-4">AI is not just a tech-sector skill; it's revolutionizing every major industry, creating huge demand for qualified engineers.</p>
+                        <div class="chart-container">
+                            <canvas id="industryImpactChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-2xl font-bold text-[#073B4C] mb-4">Get Started: Resources & Tools</h3>
+                        <p class="text-gray-600 mb-6">The best way to learn is by doing. Explore these platforms to find datasets, free computing, and pre-trained models.</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+                            <a href="https://huggingface.co" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-[#118AB2] hover:text-white transition-colors">🤗 Hugging Face</a>
+                            <a href="https://colab.research.google.com" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-[#FFD166] hover:text-black transition-colors">🛰️ Google Colab</a>
+                            <a href="https://kaggle.com" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-[#06D6A0] hover:text-white transition-colors">📊 Kaggle</a>
+                            <a href="https://platform.openai.com/playground" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-[#073B4C] hover:text-white transition-colors">🤖 OpenAI</a>
+                            <a href="https://www.youtube.com/@3blue1brown" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-red-500 hover:text-white transition-colors col-span-2 sm:col-span-1">📺 3Blue1Brown</a>
+                            <a href="https://course.fast.ai" target="_blank" class="p-3 bg-gray-100 rounded-lg hover:bg-[#FF6B6B] hover:text-white transition-colors">⚡ Fast.ai</a>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+        </main>
+
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const wrapLabel = (label, maxLength = 16) => {
+        if (label.length <= maxLength) {
+            return label;
+        }
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = '';
+        for (const word of words) {
+            if ((currentLine + ' ' + word).trim().length > maxLength) {
+                if (currentLine) lines.push(currentLine);
+                currentLine = word;
+            } else {
+                currentLine = (currentLine + ' ' + word).trim();
+            }
+        }
+        if (currentLine) lines.push(currentLine);
+        return lines;
+    };
+
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        }
+        return label;
+    };
+    
+    const chartTooltipOptions = {
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                }
+            },
+            legend: {
+                labels: {
+                    font: {
+                        family: "'Inter', sans-serif"
+                    }
+                }
+            }
+        },
+        scales: {
+            y: {
+                ticks: { font: { family: "'Inter', sans-serif" } }
+            },
+            x: {
+                ticks: { font: { family: "'Inter', sans-serif" } }
+            }
+        }
+    };
+    
+    const palette = {
+        red: '#FF6B6B',
+        yellow: '#FFD166',
+        green: '#06D6A0',
+        blue: '#118AB2',
+        navy: '#073B4C',
+    };
+    
+    const genAiCtx = document.getElementById('genAiChart').getContext('2d');
+    new Chart(genAiCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Text Generation (ChatGPT)', 'Image Generation (DALL-E)', 'Music Generation (Jukebox)', 'Video Generation (Sora)'].map(l => wrapLabel(l)),
+            datasets: [{
+                label: 'Content Types',
+                data: [95, 85, 70, 75],
+                backgroundColor: [palette.blue, palette.green, palette.yellow, palette.red],
+                borderColor: [palette.blue, palette.green, palette.yellow, palette.red],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            ...chartTooltipOptions,
+            indexAxis: 'y',
+            maintainAspectRatio: false,
+            plugins: {
+                ...chartTooltipOptions.plugins,
+                legend: { display: false }
+            },
+            scales: {
+                x: { beginAtZero: true }
+            }
+        }
+    });
+
+    const llmCtx = document.getElementById('llmChart').getContext('2d');
+    new Chart(llmCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['GPT Series (OpenAI)', 'LLaMA Series (Meta)', 'Claude Series (Anthropic)'],
+            datasets: [{
+                label: 'LLM Mindshare',
+                data: [55, 25, 20],
+                backgroundColor: [palette.blue, palette.green, palette.yellow],
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            ...chartTooltipOptions,
+            maintainAspectRatio: false,
+        }
+    });
+
+    const industryImpactCtx = document.getElementById('industryImpactChart').getContext('2d');
+    new Chart(industryImpactCtx, {
+        type: 'radar',
+        data: {
+            labels: ['Healthcare', 'Finance', 'Security', 'Gaming', 'Education'],
+            datasets: [{
+                label: 'AI Integration & Impact',
+                data: [8, 9, 7, 8, 6],
+                fill: true,
+                backgroundColor: 'rgba(17, 138, 178, 0.2)',
+                borderColor: palette.blue,
+                pointBackgroundColor: palette.blue,
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: palette.blue
+            }]
+        },
+        options: {
+            ...chartTooltipOptions,
+            maintainAspectRatio: false,
+            scales: {
+                r: {
+                    angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
+                    grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                    pointLabels: { font: { size: 14, family: "'Inter', sans-serif" } },
+                    ticks: {
+                        backdropColor: 'rgba(255, 255, 255, 0.75)',
+                        font: { family: "'Inter', sans-serif" }
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+</body>
+</html>
